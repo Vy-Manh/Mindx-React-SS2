@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 44px;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    color: #fff;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: center;
+    color: #f5f5f7;
+    list-style: none;
+    cursor: pointer;
+    gap: 40px;
+}
+
+.header__navbar li {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 44px;
+}
+
+.header__navbar .header__icon{
+    font-size: 18px;
+    width: 30px;
+}
+.header__user {
+    display: flex;
+    color: #f5f5f7;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.header__register {
+    cursor: pointer;
+    border-right: 1px solid #f5f5f75b;
+    padding:  0 10px;
+}
+
+
+.header__login {
+    padding:  0 10px;
+    cursor: pointer;
+}
+.header__navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.header i {
+    color: #fff;
+    text-decoration: none;
+}
