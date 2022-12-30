@@ -280,3 +280,85 @@
 .phone__list-item--information.information5 {
     min-height: 50px;
 }
+
+/* mobile */
+@media screen and (max-width: 500px) {
+    .phone-top-side {
+        height: 400px;
+        width: 100%;
+        background-image: url(https://www.apple.com/v/iphone-14/d/images/overview/display/xdr_display__cxbhgrgt5keq_large.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        display: flex;
+        margin-top: 44px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 15px solid #fff;
+    }
+    .phone-second-side {
+        height: 400px;
+        width: 100%;
+        background-image: url(./img/iphone_14.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center ;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 15px solid #fff;
+    }
+    .phone-third-side {
+        height: 400px;
+        width: 100%;
+        background-image: url(./img/iphone_se.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x:center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 15px solid #fff;
+    }
+    .phone-third-side__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top:10%;
+        text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+                   1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+    .phone__list-items {
+        display: block;
+        justify-content: center;
+        gap: 10px;
+    }
+    .phone__list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    .phone__list-item--cart {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .phone__list-item--cart {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 40px;
+        border-bottom: 0px #ccc solid;
+    }
+}
+/* tablet */
+@media screen and (max-width:1023px) {
+    
+}

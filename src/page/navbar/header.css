@@ -59,3 +59,13 @@
     color: #fff;
     text-decoration: none;
 }
+/* mobile */
+@media screen and (max-width: 500px) {
+    .header__navbar {
+        display: none;
+    }
+}
+/* tablet */
+@media screen and (max-width:1023px) {
+    
+}

@@ -34,7 +34,7 @@ const Home = () => {
             </a>
             <a className="home-third-side">
                 <div className="home-third-side__content">
-                    <h1><i class=" fa-brands fa-apple"></i>Đặt sớm</h1>
+                    <h1><i class=" fa-brands fa-apple"></i> Đặt sớm</h1>
                     <h3>Giảm ngay 5% với mỗi sản phẩm đặt trước 25 tháng 12 này.</h3>
                     <h4>Chỉ có trên "Tên cửa hàng"</h4>
                     <div className="home-third-side__Link">
