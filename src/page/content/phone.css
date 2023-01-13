@@ -360,5 +360,14 @@
 }
 /* tablet */
 @media screen and (max-width:1023px) {
-    
+    .phone-second-side {
+        background-position: center;
+    }
+    .phone__list-item--content {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .phone__list-items--information .information4 {
+        height: 110px;
+    }
 }

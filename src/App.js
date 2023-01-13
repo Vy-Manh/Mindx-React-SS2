@@ -5,6 +5,8 @@ import Home from './page/content/home';
 import Phone from './page/content/phone';
 import Footer from './page/footer/footer';
 import {Routes, Route} from 'react-router-dom'
+import {phoneAPI} from 'product.js'
+
 
 function App() {
   return (
