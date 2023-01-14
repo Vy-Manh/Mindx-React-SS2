@@ -38,8 +38,8 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link>
-                            Phụ kiện
+                        <Link to='showItems'>
+                            Sản phẩm
                         </Link>
                     </li>
                     <li>

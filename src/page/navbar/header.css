@@ -68,6 +68,9 @@
 .fa-bars {
     font-size: 0px;
 }
+.fa-times {
+    font-size: 0px;
+}
 /* mobile */
 @media screen and (max-width: 500px) {
     .header__navbar .fa-x {
