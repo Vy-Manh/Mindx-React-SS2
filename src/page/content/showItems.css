@@ -1,0 +1,35 @@
+h1 {
+    margin-top: 44px;
+}
+
+.box-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+p.Dv {
+    margin-top: -0.5%;
+}
+.h1Text{
+    margin-top: 5%;
+}
+.carousel.slide {
+    width: 100%;
+    max-height: 570px;
+    overflow: hidden;
+    margin: auto;
+    margin-top:44px;
+}
+/* tablet */
+@media screen and (max-width:1023px)  {
+    .carousel.slide {
+        max-height: 430px;
+    }
+}
+@media screen and (max-width:500px) {
+    .carousel.slide {
+        max-height: 239px;
+    }
+}

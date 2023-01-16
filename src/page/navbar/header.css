@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 44px;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    color: #fff;
+}
+
+.menu-icon.fa-bars{
+    color: transparent;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: center;
+    color: #f5f5f7;
+    list-style: none;
+    cursor: pointer;
+    gap: 40px;
+    margin-top: 5%;
+}
+
+.header__navbar li {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 44px;
+}
+
+.header__navbar .header__icon{
+    font-size: 18px;
+    width: 30px;
+}
+.header__user {
+    display: flex;
+    color: #f5f5f7;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header__register {
+    cursor: pointer;
+    border-right: 1px solid #f5f5f75b;
+    padding:  0 10px;
+}
+
+
+.header__login {
+    padding:  0 10px;
+    cursor: pointer;
+}
+.header__navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.header i {
+    color: #fff;
+    text-decoration: none;
+}
+.header__navbar .fa-x {
+    display: none;
+}
+.fa-bars {
+    font-size: 0px;
+}
+.fa-times {
+    font-size: 0px;
+}
+/* mobile */
+@media screen and (max-width: 500px) {
+    .header__navbar .fa-x {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    .header__navbar {
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.85);
+        position: absolute;
+        top:0;
+        left:-20px;
+        width: 40%;
+        height: 100vh;
+        gap : 0;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        display: none;
+        padding-left: 0;
+    }
+    .header__navbar.active {
+        display: flex !important;
+    }
+    .header__navbar:first-child {
+        margin-top: 44px;
+    }
+    .header {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .menu-icon.fa-bars{
+        color: #fff;
+        order: -1;
+    }
+    .header__icon {
+        padding: 0 10px;
+        justify-self: center;
+    }
+    .header__icon-1 {
+        position: absolute;
+        right: 50%;
+        top: 25%;
+        bottom: 0;
+    }
+    .header__navbar .header__icon {
+        font-size: 18px;
+        width: auto;
+    }
+    .fa-bars {
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .fa-times {
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+/* tablet */
+@media screen and (max-width:1023px) {
+    
+}

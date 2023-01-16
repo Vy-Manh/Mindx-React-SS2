@@ -1,0 +1,375 @@
+/* top side */
+.phone-top-side {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.apple.com/v/iphone-14/d/images/overview/display/xdr_display__cxbhgrgt5keq_large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    margin-top: 44px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 15px solid #fff;
+}
+
+.phone-top-side__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top:10%;
+    color: #000;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.phone-top-side__content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin:0;
+}
+
+.phone-top-side__content h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.phone-top-side__Link {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: blue;
+}
+
+.phone-top-side__Link a {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.phone-top-side__Link a:hover {
+    text-decoration:underline;
+}
+
+.phone-top-side__Link i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* second side */
+.phone-second-side {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/iphone_14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 15px solid #fff;
+}
+
+.phone-second-side__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom:0%;
+    color: #000;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.phone-second-side__content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin:0;
+}
+
+.phone-second-side__content h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.phone-second-side__Link {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: blue;
+}
+
+.phone-second-side__Link a {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.phone-second-side__Link a:hover {
+    text-decoration:underline;
+}
+
+.phone-second-side__Link i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* third side */
+
+.phone-third-side {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/iphone_se.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 15px solid #fff;
+   
+}
+
+.phone-third-side__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top:30%;
+    left: 4%;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.phone-third-side__content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin:0;
+}
+
+.phone-third-side__content h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.phone-third-side__Link {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: blue;
+}
+
+.phone-third-side__Link a {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.phone-third-side__Link a:hover {
+    text-decoration:underline;
+}
+
+.phone-third-side__Link i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+/* phone list item */
+
+.title--phone-list {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.phone__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+}
+.phone__list-item--img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.phone__list-item--content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.phone__list-item--content h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.phone__list-item--content h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.phone__list-item--cart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-bottom:1px #ccc solid;
+}
+.phone__list-item--cart-buy {
+    cursor: pointer;
+}
+.phone__list-item--cart-buy a {
+    padding: 5px 10px;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    justify-items: center;
+    border-radius: 25px;
+}
+.phone__list-item--cart-leanr {
+    color: blue;
+    cursor: pointer;
+}
+
+.phone__list-item--cart-leanr:hover {
+    text-decoration: underline;
+}
+
+.phone__list-item--cart-leanr i {
+    font-size: 12px;
+}
+
+/* information */
+.phone__list-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.phone__list-items--information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.phone__list-item--information h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.phone__list-item--information p {
+    font-size: 14px;
+    margin-bottom: -4px;
+    color: #666;
+}
+
+.phone__list-item--information.information1 p {
+    margin: 8px 0;
+}
+
+.phone__list-item--information.information2 {
+    height: 50px;
+}
+
+.phone__list-item--information.information4 {
+    height: 65px;
+}
+
+.phone__list-item--information.information5 {
+    min-height: 50px;
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+    .phone-top-side {
+        height: 400px;
+        width: 100%;
+        background-image: url(https://www.apple.com/v/iphone-14/d/images/overview/display/xdr_display__cxbhgrgt5keq_large.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        display: flex;
+        margin-top: 44px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 15px solid #fff;
+    }
+    .phone-second-side {
+        height: 400px;
+        width: 100%;
+        background-image: url(./img/iphone_14.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center ;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 15px solid #fff;
+    }
+    .phone-third-side {
+        height: 400px;
+        width: 100%;
+        background-image: url(./img/iphone_se.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x:center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 15px solid #fff;
+    }
+    .phone-third-side__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top:10%;
+        text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+                   1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+    .phone__list-items {
+        display: block;
+        justify-content: center;
+        gap: 10px;
+    }
+    .phone__list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    .phone__list-item--cart {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .phone__list-item--cart {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 40px;
+        border-bottom: 0px #ccc solid;
+    }
+}
+/* tablet */
+@media screen and (max-width:1023px) {
+    .phone-second-side {
+        background-position: center;
+    }
+    .phone__list-item--content {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .phone__list-items--information .information4 {
+        height: 110px;
+    }
+}
