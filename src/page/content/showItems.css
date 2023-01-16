@@ -17,19 +17,6 @@ p.Dv {
 }
 .carousel.slide {
     width: 100%;
-    max-height: 570px;
-    overflow: hidden;
     margin: auto;
-    margin-top:44px;
-}
-/* tablet */
-@media screen and (max-width:1023px)  {
-    .carousel.slide {
-        max-height: 430px;
-    }
-}
-@media screen and (max-width:500px) {
-    .carousel.slide {
-        max-height: 239px;
-    }
+    margin-top: 5%;
 }

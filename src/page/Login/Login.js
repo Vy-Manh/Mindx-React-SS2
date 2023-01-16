@@ -28,7 +28,7 @@ const Login = () => {
     <div>
       <div className="login-form">
   <form>
-    <h1>Đăng nhập</h1>
+    <h1>Login</h1>
     <div className="content">
       <div className="input-field">
         <input type="email" placeholder="Email" autoComplete="nope" />
@@ -36,18 +36,18 @@ const Login = () => {
       <div className="input-field">
         <input
           type="password"
-          placeholder="Mật khẩu"
+          placeholder="Password"
           autoComplete="new-password"
           onChange={(e) => setPwd(e.target.value)}
         />
       </div>
       <Link to='#' className="link">
-        Quên mật khẩu ?
+        Forgot Your Password?
       </Link>
     </div>
     <div className="action">
-      <button>Đăng ký</button>
-      <button onClick={handleLogin}>Đăng nhập</button>
+      <button>Register</button>
+      <button onClick={handleLogin}>Sign in</button>
     </div>
   </form>
     </div>

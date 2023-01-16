@@ -60,7 +60,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="header__user">
-                <div className="header__login"><Link to='Login' style={{color:'white',textDecoration:'none'}}>Đăng nhập</Link></div>
+                <div className="header__login"><Link to='Login' style={{color:'white',textDecoration:'none'}}>Sign In</Link></div>
             </div>
 
         </div>
