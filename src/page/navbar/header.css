@@ -85,13 +85,14 @@
         background-color: rgba(0,0,0,0.85);
         position: absolute;
         top:0;
-        left:0;
+        left:-20px;
         width: 40%;
         height: 100vh;
         gap : 0;
         justify-content: end;
         text-align: center;
         display: none;
+        padding-left: 0;
     }
     .header__navbar.active {
         display: block !important;

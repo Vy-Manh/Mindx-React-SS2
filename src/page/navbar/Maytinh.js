@@ -12,7 +12,7 @@ var ipadItems = JSON.parse(ipadAPI);
 const ShowItems = () => {
     return(
         <>
-        <h1 style={{marginTop:'5%'}}>Máy tính</h1>  
+        <h1 style={{marginTop:'44px'}}>Máy tính</h1>  
         <div className="box-items">
         <ComputerShowed/>
         </div>

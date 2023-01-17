@@ -64,6 +64,7 @@
     background-image: url(./img/iphone_14.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;

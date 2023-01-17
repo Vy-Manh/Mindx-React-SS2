@@ -8,6 +8,7 @@ import {Routes, Route} from 'react-router-dom'
 import Maytinh from './page/navbar/Maytinh';
 import Login from './page/Login/Login';
 import PrivateRoutes from './page/Login/PrivateRoutes';
+import Register from './page/Login/Register';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/showItems' element={ <ShowItems/>}/>
         <Route path='/MayTinh' element={ <Maytinh/>}/>
         <Route path='/Login' element={ <Login/>}/>
+        <Route path='/register' element={<Register/>} />
       </Routes>
       <footer>
         <Footer></Footer>

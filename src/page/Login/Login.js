@@ -1,58 +1,96 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from '../Login/useAuth';
-import '../Login/Login.css'
+import { toast } from "react-toastify";
 
 const Login = () => {
-  const [pwd, setPwd] = useState("");
-  let isLogin = useAuth();
-  const navigate = useNavigate();
-  let currentPwd = "123@";
+    const [username, usernameupdate] = useState('');
+    const [password, passwordupdate] = useState('');
 
-  useEffect(() => {
-    if (isLogin) {
-      navigate("/");
+    const usenavigate=useNavigate();
+
+    useEffect(()=>{
+sessionStorage.clear();
+    },[]);
+
+    const ProceedLoginusingAPI = (e) => {
+        e.preventDefault();
+        if (validate()) {
+            ///implentation
+            // console.log('proceed');
+            let inputobj={
+            "username": username,
+            "password": password};
+            fetch("https://639493294df9248eada657ba.mockapi.io/api/v1/Account",{
+                method:'POST',
+                headers:{'content-type':'application/json'},
+                body:JSON.stringify(inputobj)
+            }).then((res) => {
+                return res.json();
+            }).then((resp) => {
+                console.log(resp)
+                if (Object.keys(resp).length === 0) {
+                    toast.error('Login failed, invalid credentials');
+                }else{
+                     toast.success('Success');
+                     sessionStorage.setItem('username',username);
+                     sessionStorage.setItem('jwttoken',resp.jwtToken);
+                   usenavigate('/')
+                }
+                // if (Object.keys(resp).length === 0) {
+                //     toast.error('Please Enter valid username');
+                // } else {
+                //     if (resp.password === password) {
+                //         toast.success('Success');
+                //         sessionStorage.setItem('username',username);
+                //         usenavigate('/')
+                //     }else{
+                //         toast.error('Please Enter valid credentials');
+                //     }
+                // }
+            }).catch((err) => {
+                toast.error('Login Failed due to :' + err.message);
+            });
+        }
     }
-  }, [isLogin, navigate]);
-
-  const handleLogin = () => {
-    if (pwd === currentPwd) {
-      
-      navigate("/");
-    } else {
-      alert("Dang nhap sai");
+    const validate = () => {
+        let result = true;
+        if (username === '' || username === null) {
+            result = false;
+            toast.warning('Please Enter Username');
+        }
+        if (password === '' || password === null) {
+            result = false;
+            toast.warning('Please Enter Password');
+        }
+        return result;
     }
-  };
-
-  return (
-    <div>
-      <div className="login-form">
-  <form>
-    <h1>Login</h1>
-    <div className="content">
-      <div className="input-field">
-        <input type="email" placeholder="Email" autoComplete="nope" />
-      </div>
-      <div className="input-field">
-        <input
-          type="password"
-          placeholder="Password"
-          autoComplete="new-password"
-          onChange={(e) => setPwd(e.target.value)}
-        />
-      </div>
-      <Link to='#' className="link">
-        Forgot Your Password?
-      </Link>
-    </div>
-    <div className="action">
-      <button>Register</button>
-      <button onClick={handleLogin}>Sign in</button>
-    </div>
-  </form>
-    </div>
-    </div>
-  );
-};
+    return (
+        <div className="row">
+            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
+                <form onSubmit={ProceedLoginusingAPI} className="container">
+                    <div className="card">
+                        <div className="card-header">
+                            <h2>Đăng Nhập</h2>
+                        </div>
+                        <div className="card-body">
+                            <div className="form-group">
+                                <label>Tài Khoản <span className="errmsg">*</span></label>
+                                <input value={username} onChange={e => usernameupdate(e.target.value)} className="form-control"></input>
+                            </div>
+                            <div className="form-group">
+                                <label>Mật Khẩu<span className="errmsg">*</span></label>
+                                <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} className="form-control"></input>
+                            </div>
+                        </div>
+                        <div className="card-footer">
+                            <button type="submit" className="btn btn-primary">Đăng Nhập</button> |
+                            <Link className="btn btn-success" to={'/register'}>Đăng Kí</Link>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    );
+}
 
 export default Login;
